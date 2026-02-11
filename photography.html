@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography - Imtiaz</title>
+
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size: x-large;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .buttons a {
+      text-decoration:solid;
+      border: 1px solid #111;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      color: #111;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    .buttons a:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    .gallery {
+      display:block;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width:100%;
+      height:auto;
+      border-radius: 8px;
+    }
+@media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+  </style>
+</head>
+
+<body>
+
+  <h1>Some Random Photography of Mine</h1>
+
+  <p>
+    Just uploading some random photos while learning web development
+    using HTML and CSS.
+  </p>
+
+  <div class="buttons">
+    <a href="index.html">← Home Page</a>
+  </div>
+
+  <div class="gallery">
+    <img src="Images/p7.jpg" >
+    <img src="Images/p8.jpg" >
+    <img src="Images/p3.jpg" >
+    <img src="Images/p4.jpg" >
+    <img src="Images/p5.jpg" >
+    <img src="Images/p6.jpg" >
+  </div>
+
+</body>
+</html>
